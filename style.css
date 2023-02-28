@@ -1,0 +1,698 @@
+*{
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+
+.logo_class{
+    width: 20em;
+    height: auto;
+    margin-right: 2em;
+    margin-top: 1em;
+}
+
+.logo_class_div{
+    background-color: #FFFFFF;
+    position: fixed;
+    right: 3em;
+    top: 6em;
+    padding-left: 2em;
+    padding-bottom: 1em;
+    border-radius: 15px;
+}
+
+
+/* Tabs Allgemein */
+
+#tabs{
+    font-size: x-large;
+    font-weight: normal;
+    color: #5e5d5e
+}
+
+.tab_class{
+    transition: border-top .1s, color .3s !important;
+}
+
+.tab_class:hover{
+    color: #8580B9;
+    border-top: #78006C !important;
+    border-top-style: solid !important;
+    border-top-width: medium !important;
+}
+
+.custom-tab--selected{
+    color: #78006C !important;
+    font-weight: bolder;
+    border-top-color: #78006C !important;
+}
+
+
+
+
+
+/* Tab View-ID */
+
+#tab_viewid_div{
+    overflow: auto;
+    padding-top: 50px;
+    padding-bottom: 53.33em;
+    background-image: url("Produktion_Agro Pharma_Leverkusen_04 Sitecore Internet Image 3-2.jpg");
+    background-size: cover;
+    scroll-behavior: inherit;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#logo_viewid_div{
+
+    outline: medium solid #929192;
+}
+
+
+
+#viewid_div{
+    width: 30em;
+    height: 15em;
+    margin-right: auto;
+    margin-left: -15em;
+    margin-top: -7.5em;
+    outline: medium solid #929192;
+    border-radius: 15px;
+    transition: box-shadow .5s;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+#viewid_div:hover{
+    box-shadow: 6px 6px 11px #929192;
+}
+
+#viewid_text{
+    display: block;
+    width: 15em;
+    margin: auto;
+    padding-top: 0.6em;
+    font-size: x-large;
+    font-weight: bolder;
+    text-align: center;
+    color: #5e5d5e;
+}
+
+#input_viewid{
+    margin: 3em auto auto auto;
+    width: 15em;
+    display: block;
+    border-radius: 4px;
+    outline: thin solid #78006C;
+}
+
+#error_viewid{
+    width: auto;
+    display: block;
+    text-align: center;
+    margin: 1em auto auto auto;
+    color: #757475;
+}
+
+
+/* Tab Menue */
+
+
+#logo_menu_div{
+    position: absolute;
+}
+
+#menu_all_items_div{
+
+    align-content: center;
+    width: 1000px;
+    margin: 12em auto auto auto;
+}
+
+#datepicker_and_label_div{
+    margin-left: 4.5em;
+    position: relative !important;
+    max-width: 500px;
+    margin-bottom: 4em;
+}
+
+#datepicker_label{
+    font-size: larger;
+}
+
+#zuweisung_label{
+    font-size: x-large;
+    display: block;
+    text-align: center;
+    margin-right: 16.5em;
+}
+
+#menu_result_div{
+    outline: medium solid #929192;
+    border-radius: 15px;
+    transition: box-shadow .5s;
+    background-color: #FFFFFF;
+    padding-left: 2em;
+    padding-top:1.5em;
+}
+
+#menu_result_div:hover{
+    box-shadow: 6px 6px 11px #929192;
+}
+
+#zuweisungs_form_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#label_dropdown_wrapper{
+    display: flex;
+    margin-bottom: 1.5em;
+}
+
+.menu_label_div{
+    display: flex;
+    align-items: center;
+    margin-right: 1em;
+}
+
+.menu_dropdown_div{
+    display: inline-block;
+    width: 300px;
+    margin-right: 40px;
+}
+
+.menu_dropdown{
+    width: 15em;
+    display: block;
+    border-radius: 4px;
+    outline: thin solid #78006C;
+}
+
+#menu_excel_div{
+    margin-top: 2em;
+    margin-left: 4em;
+}
+
+.excel_button{
+    background-color: rgb(73, 182, 117);
+    color: black;
+    border: none;
+    padding: 6px 16px;
+    text-align: center;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: 0.3s;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 8px;
+}
+.excel_button:hover {
+    background-color: #929192;
+    opacity: 1;
+    color: black;
+    cursor: pointer;
+}
+.show-hide {
+    position: relative;
+    width: 200px;
+    background-color: #78006C;
+    color:white;
+    border: none;
+    padding: 6px 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+/* Tab Tabelle */
+
+.show-hide:hover{
+    background-color: #929192;
+    opacity: 1;
+    color: black;
+    cursor:pointer;
+}
+.show-hide::before {
+    background: inherit;
+    content: "Spalten anzeigen/ausblenden";
+    position: absolute;
+    left: 5px;
+    right: 5px;
+}
+.dash-spreadsheet-menu{
+    width:100%;
+    z-index: 16;
+    background: white;
+    position: fixed;
+    top: 9.7em;
+    padding-left: 0.5em;
+    left:0;
+}
+#tab_content{
+    z-index: 20;
+}
+
+#loading_circle{
+    z-index: 100 !important;
+    margin-top: 50px !important;
+}
+
+
+
+#rezeptschrittreihenfolgemenu_div{
+    outline: medium solid #929192;
+    border-radius: 15px;
+    padding: 2em;
+    margin-bottom: 0.2em;
+    margin-top: 1em;
+}
+
+#rezeptschrittreihenfolge_label{
+    font-size: x-large;
+    margin-top: 0;
+    width: 350px;
+    margin-right: 0;
+}
+
+#reihenfolge_aendern_form_div {
+    width: 564px;
+    z-index: 16;
+    position: relative;
+}
+#reihenfolge_aendern_form_div>* {
+    z-index: 16;
+}
+
+#button_line_div{
+    margin-top:0.5em;
+}
+#reihenfolge_button_div{
+    display: inline-block;
+}
+#reihenfolge_anwenden_button{
+    display: flex;
+}
+#first_row{
+    margin:0;
+}
+#logo_tabelle_div{
+    position: absolute;
+    right:2em;
+    top: 2em;
+}
+
+#logo_tabelle_div>*{
+    width: 15em;
+    height: auto;
+    margin-left: auto;
+}
+#graph_generieren{
+    position: absolute;
+    right:20em;
+    top: 1em;
+    z-index: 16;
+}
+
+#graph_generieren{
+    outline: medium solid #929192;
+    border-radius: 15px;
+    padding: 0.5em;
+}
+
+#Graphen_erstellen{
+    text-align: center;
+    margin-bottom: 0.5em;
+    color: #5e5d5e;
+}
+
+#Graphen_erstellen>*{
+    margin-bottom: 0em;
+    margin-top:0em;
+}
+#wahrscheinlichkeitsnetz{
+    display: block;
+    margin:0.2em;
+}
+#boxplot{
+    display: block;
+    margin:0.2em;
+}
+#zeitreihendiagramm{
+    display: block;
+    margin:0.2em;
+}
+#table_excel_div{
+    display: inline-block;
+    margin-left:1em;
+}
+#wartezeit_button_div {
+    margin-bottom: 0.5em;
+    margin-left:1em;
+    display: inline-block;
+}
+
+#wartezeit_button{
+    background-color: #929192;
+
+}
+
+#update_data_div{
+    margin-left: 1em;
+    display: inline-block;
+}
+#dropdown-div{
+    position:fixed;
+    width: 50em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left:0em;
+}
+#header_menu_tabelle{
+    position:fixed;
+    width:100%;
+    margin-left:0em;
+    margin-bottom: 0em;
+    top:3.7em;
+    background:white;
+    z-index: 17;
+    left:0;
+    padding-left:0.5em;
+    padding-bottom:0.1em;
+}
+/*
+#upper_table_div{
+    margin-top:6em;
+    position:sticky;
+    margin-left:0em;
+    top: 14.46em;
+    background:white;
+    z-index: 15;
+
+}
+*/
+/*
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner table{
+    --accent: #78006C !important;
+}
+*/
+#table_div{
+    position:relative;
+    z-index:5;
+    margin-left:0em;
+    top: 8.09em;
+    background:white;
+    margin-top:0;
+}
+#reaktor_dropdown_div{
+    margin-top: 1em;
+    width: 225px;
+    display:inline-block;
+}
+#filter_dropdown>*>.Select-control{
+    width: fit-content;
+}
+.button_styled{
+    background-color: #78006C;
+    color:white;
+    border: none;
+    padding: 6px 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 8px;
+}
+.button_styled:hover {
+    background-color: #929192;
+    opacity: 1;
+    color: black;
+    cursor:pointer;
+}
+
+.Select-value-label {
+    color: #5e5d5e;
+    border-color: #929192 !important;
+    background-color:white;
+}
+.Select-value-icon {
+    font-size: larger;
+    color: #5e5d5e;
+    border-right: none !important;
+    border-color: #929192 !important;
+    background-color:white !important;
+    padding-bottom: 0 !important;
+
+}
+
+.Select-value-icon:hover{
+    background-color: white !important;
+    color: red !important;
+}
+
+.Select-value{
+    margin-bottom: 5px !important;
+}
+
+.Select--multi .Select-value {
+    border: 1px solid rgb(24 28 41 /24%) !important;
+}
+.Select--multi .Select-value-icon{
+    border-right: 1px solid rgba(24 28 41 /24%);
+}
+
+/* reduce row height */
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner tr{
+    min-height: 2px;
+    height: 2px;
+    padding-top: -1em;
+}
+/* reduce header height */
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner tr:first-of-type{
+    min-height: 30px;
+    height: 30px;
+}
+
+.dash-header{
+    color: black !important;
+}
+
+.is-focused:not(.is-open)> .Select-control{
+    border-color: lightgrey !important;
+}
+
+
+/*Tab Graphen */
+
+#Summary{
+
+
+}
+#SummaryText{
+
+    margin-top:-1em;
+    margin-left:1em;
+    white-space: nowrap;
+}
+#Zeitraum{
+
+    top: 1.4em;
+}
+#datumsrange{
+    width: 20em;
+    position: relative;
+    top:-2em;
+    margin-left: 7em;
+}
+#behältertext{
+    top:-11.8em;
+    position:relative;
+    white-space:nowrap;
+    margin-left:1em;
+}
+#behälter_button{
+    top:-13em;
+    margin-left:1em;
+    position:relative;
+}
+#behälter_inhalt{
+    position: relative;
+    top: -10.5em;
+    margin-left:10em;
+}
+#zeiten{
+    top:1em;
+}
+#gm_zeiten{
+    width: 28.2em;
+    border-bottom: 1px solid #E4E4E4;
+    padding-bottom: 10px;
+    top:-1.5em;
+    margin-left:10em;
+    position: relative;
+}
+#graphenart{
+    top:6.2em;
+}
+
+.graph_label{
+    margin-left: 1em;
+    color: #78006C;
+    position: relative;
+}
+
+#reaktoren_label{
+    top: 3.4em;
+}
+
+#gm_graphen{
+    display:inline-block;
+    top:-0.9em;
+    margin-left:10em;
+    position:relative;
+    width: auto;
+}
+#graphenDetails{
+    top:4em;
+    margin-left: 0em;
+    position: relative;
+    z-index:11;
+    width:100%;
+}
+#graphenSettings{
+    height: 15em;
+}
+#graphenDiv{
+    z-index:10;
+    position:relative;
+    margin-top:2em;
+}
+#X-Achse{
+    position:relative;
+    top:1.1em;
+    z-index:5;
+    margin-left:10em;
+}
+#X_achsen-input{
+    width:40px;
+    height:15px;
+}
+#X-Achsen-Div{
+    position:relative;
+    bottom: 1.2em;
+    z-index:5;
+    margin-left:24em;
+}
+#Y-Achse{
+    position: relative;
+    bottom: 3.3em;
+    z-index:5;
+    margin-left:33em;
+}
+#Y_achsen-input{
+    width:40px;
+    height:15px;
+}
+#Y-Achsen-Div{
+    position:relative;
+    bottom: 5.6em;
+    z-index:5;
+    margin-left:47em;
+}
+#logo_graph{
+    width: 14em;
+    height: auto;
+    margin-top: 1em;
+    z-index: 20;
+    margin-right: 0;
+
+}
+
+#logo_graph_div{
+    right: 50%;
+    z-index: 20;
+    margin-right: -7em;
+}
+/*
+.logo_class_div_graph{
+    background-color: #FFFFFF;
+    position: fixed;
+    right: 3em;
+    top: 6em;
+    padding-left: 2em;
+    padding-bottom: 1em;
+    border-radius: 15px;
+    outline: medium solid #929192;
+    z-index: 20;
+}
+
+
+ */
+
+#checklist{
+    display:inline-block;
+    position: relative;
+    bottom: 0;
+    width: auto;
+    border-bottom: 1px solid #E4E4E4;
+    padding-bottom: 12px;
+}
+
+#checklist>*>input[type="checkbox"] {
+    display: inline-grid;
+    place-content: center;
+    margin-left: 1em;
+    margin-right: 0.5em;
+    content: "" !important;
+}
+
+#checklist>*>input[type="checkbox"]::before {
+    content: "" !important;
+    width: 0.6em;
+    height: 0.6em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #78006C;
+    border-radius: 1px;
+    outline: 1px solid black;
+    
+}
+
+#checklist>*>input[type="checkbox"]:checked::before {
+    transform: scale(1);
+    content: "" !important;
+}
+
+input[type="radio"] {
+  /* ...existing styles */
+  display: inline-grid;
+  place-content: center;
+    margin-left: 1em;
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #78006C;
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
